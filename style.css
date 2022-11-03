@@ -1,0 +1,96 @@
+.page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    grid-template-areas: 
+    "i i i"
+    "m m s"
+    "m m s";
+}
+
+@media screen and (max-width: 800px) {
+    .page-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1em;
+        grid-template-areas: 
+        "i i i"
+        "m m m"
+        "m m s";
+    }
+    .intro {
+        grid-area: i;
+        background-color: yellow;
+    }
+    .main {
+        grid-area: m;
+        background-color: tomato;
+    }
+    .sidebar {
+        grid-area: s;
+        background-color: greenyellow;
+    }
+}
+
+.intro {
+    grid-area: i;
+    background-color: yellow;
+}
+
+.main {
+    grid-area: m;
+    background-color: tomato;
+}
+
+.sidebar {
+    grid-area: s;
+    background-color: greenyellow;
+}
+
+.preamble {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    grid-template-areas: 
+    "h3 h3 h3"
+    "p2 p3 p4 ";
+}
+
+.preamble h3 {
+    grid-area: h3;
+}
+
+.preamble p:nth-child(2) {
+    grid-area: p2;
+}
+
+.preamble p:nth-child(3) {
+    grid-area: p3;
+}
+
+.preamble p:nth-child(4) {
+    grid-area: p4;
+}
+
+.explanation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    grid-template-areas: 
+    "h h"
+    "ep1 ep2";
+}
+
+.explanation h3 {
+    grid-area: h;
+}
+
+.explanation p:nth-child(2) {
+    grid-area: ep1;
+    background-color: yellow;
+}
+
+.explanation p:nth-child(3) {
+    grid-area: ep2;
+    background-color: rgb(137, 137, 218);
+}
