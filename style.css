@@ -138,8 +138,8 @@ footer a {
     text-decoration: none;
     /* border-style: double; */
     color: black;
-    padding: 20px 50px;
-    margin: 30px 50px;
+    padding: 20px 30px;
+    margin: 30px 20px;
     border-radius: 10%;
     font-weight: bold;
 }
